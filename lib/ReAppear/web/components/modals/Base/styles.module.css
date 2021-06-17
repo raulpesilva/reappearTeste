@@ -1,0 +1,40 @@
+.container {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: absolute;
+  background-color: #00000000;
+  animation-name: appearBG;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes appearBG {
+  from {
+    background-color: #00000000;
+  }
+  to {
+    background-color: #00000020;
+  }
+}
+.content {
+  transform: scale(0.8);
+  animation-name: scale;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+@keyframes scale {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,13 @@
+.content {
+  transform: translateY(-1920px);
+  animation-name: fromLeft;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.11, 0.42, 0.62, 1.03);
+  z-index: 1000;
+}
+@keyframes fromLeft {
+  to {
+    transform: translateY(0);
+  }
+}
